@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <div class="dashboard">
+      <!-- Sidebar-->
+      <aside class="sidebar"><img class="logo" src="/image/logo.svg" alt="logo" width="180">
+        <ul class="sidebar__menu">
+          <li class="sidebar__item sidebar__title">Dashboard</li>
+          <li class="sidebar__item"><a class="sidebar__link" href="#" id="product-link"><img src="/image/3d-square 1.svg" alt="3d-square" width="20">Product<i class="fas fa-chevron-right align-right"></i></a></li>
+          <li class="sidebar__item"><a class="sidebar__link" href="#" id="customers-link"><img src="/image/user-square.svg" alt="user" width="20">Customers<i class="fas fa-chevron-right align-right"></i></a></li>
+          <li class="sidebar__item"><a class="sidebar__link" href="#" id="income-link"><img src="/image/wallet-money 2.svg" alt="wallet" width="20">Income<i class="fas fa-chevron-right align-right"></i></a></li>
+          <li class="sidebar__item"><a class="sidebar__link" href="#" id="promote-link"><img src="/image/discount-shape 1.svg" alt="discount" width="20">Promote<i class="fas fa-chevron-right align-right"></i></a></li>
+          <li class="sidebar__item"><a class="sidebar__link" href="#" id="help-link"><img src="/image/message-question 1.svg" alt="help" width="20">Help<i class="fas fa-chevron-right align-right"></i></a></li>
+        </ul>
+        <div class="sidebar__footer"><img class="avatar" src="/image/avatar.png" alt="avatar" width="40">
+          <div class="sidebar__footer-texts">
+            <p class="sidebar__footer-text">Evano</p>
+            <p class="sidebar__footer-text-1">Project Manager</p>
+          </div>
+        </div>
+      </aside>
+      <!-- Main Content-->
+      <div class="dashboard__content">
+        <header class="dashboard__header">
+          <p class="dashboard__welcome">Hello Evano 👋🏼,</p>
+        </header>
+        <main class="dashboard__main" id="main-content">
+          <!-- Dynamic content will be loaded here-->
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

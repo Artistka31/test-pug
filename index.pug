@@ -1,0 +1,53 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Dashboard
+    link(rel="stylesheet", href="styles.css")
+    link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css")
+    script(src="main.js", defer)
+  body
+    .dashboard
+      // Sidebar
+      aside.sidebar
+        img.logo(src="/image/logo.svg", alt="logo", width="180")
+        ul.sidebar__menu
+          li.sidebar__item.sidebar__title Dashboard
+          li.sidebar__item
+            a.sidebar__link(href="#", id="product-link")
+              img(src="/image/3d-square 1.svg", alt="3d-square", width="20")
+              | Product
+              i.fas.fa-chevron-right.align-right
+          li.sidebar__item
+            a.sidebar__link(href="#", id="customers-link")
+              img(src="/image/user-square.svg", alt="user", width="20")
+              | Customers
+              i.fas.fa-chevron-right.align-right
+          li.sidebar__item
+            a.sidebar__link(href="#", id="income-link")
+              img(src="/image/wallet-money 2.svg", alt="wallet", width="20")
+              | Income
+              i.fas.fa-chevron-right.align-right
+          li.sidebar__item
+            a.sidebar__link(href="#", id="promote-link")
+              img(src="/image/discount-shape 1.svg", alt="discount", width="20")
+              | Promote
+              i.fas.fa-chevron-right.align-right
+          li.sidebar__item
+            a.sidebar__link(href="#", id="help-link")
+              img(src="/image/message-question 1.svg", alt="help", width="20")
+              | Help
+              i.fas.fa-chevron-right.align-right
+        .sidebar__footer
+          img.avatar(src="/image/avatar.png", alt="avatar", width="40")
+          .sidebar__footer-texts
+            p.sidebar__footer-text Evano
+            p.sidebar__footer-text-1 Project Manager
+      // Main Content
+      .dashboard__content
+        header.dashboard__header
+          p.dashboard__welcome Hello Evano 👋🏼,
+        main.dashboard__main(id="main-content")
+          // Dynamic content will be loaded here
+          
